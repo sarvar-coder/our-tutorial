@@ -22,7 +22,7 @@ func fetchCountries(handler: @escaping(Result<Countries, Error>) -> Void) {
                   (200...399).contains(httpresponse.statusCode) else { 
                 print("Response Error")
                 return
-            }
+            } 
             
             do {
                 let result = try JSONDecoder().decode(Countries.self, from: data)

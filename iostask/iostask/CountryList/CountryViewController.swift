@@ -11,11 +11,12 @@ class CountryViewController: UIViewController {
     
     let tableView = UITableView()
     
-   let array = ["1", "2", "3"]
+    var countries = [Country]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
-        
+        fetch()
     }
 }
 extension CountryViewController {
@@ -23,16 +24,21 @@ extension CountryViewController {
         setupTableView()
         style()
         layout()
+       
+        title = "Countries"
+        navigationController?.navigationBar.prefersLargeTitles = false
     }
+    
     private func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(CountryCell.self, forCellReuseIdentifier: "cell")
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.rowHeight = 150
     }
     
     func style() {
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        
+    
     }
     
     private func layout() {
@@ -50,12 +56,12 @@ extension CountryViewController {
 extension CountryViewController:  UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        array.count
+        return countries.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = array[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CountryCell
+        cell.configure(with: countries[indexPath.row])
         return cell
     }
 }
@@ -63,5 +69,19 @@ extension CountryViewController:  UITableViewDataSource {
 extension CountryViewController:  UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+}
+// networking
+extension CountryViewController {
+    func fetch() {
+        CountryService.shared.fetchCountries { result in
+            switch result {
+            case .success(let success):
+                self.countries = success.countries
+                self.tableView.reloadData()
+            case .failure(let failure):
+                print(failure.localizedDescription)
+            }
+        }
     }
 }

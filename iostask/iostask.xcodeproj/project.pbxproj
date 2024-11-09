@@ -14,6 +14,7 @@
 		5E83A3302CDE4D2C003788CD /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E83A32F2CDE4D2C003788CD /* Country.swift */; };
 		5E83A3332CDE4DAC003788CD /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E83A3322CDE4DAC003788CD /* CountryCell.swift */; };
 		5E83A3352CDE7DE2003788CD /* CountryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E83A3342CDE7DE2003788CD /* CountryService.swift */; };
+		5E9193992CDF2715009B97FF /* CountryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9193982CDF2715009B97FF /* CountryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		5E83A32F2CDE4D2C003788CD /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		5E83A3322CDE4DAC003788CD /* CountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
 		5E83A3342CDE7DE2003788CD /* CountryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryService.swift; sourceTree = "<group>"; };
+		5E9193982CDF2715009B97FF /* CountryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +60,9 @@
 		5E83A31A2CDE4AB7003788CD /* iostask */ = {
 			isa = PBXGroup;
 			children = (
-				5E83A3362CDE7FC7003788CD /* Networking */,
 				5E83A31B2CDE4AB7003788CD /* AppDelegate.swift */,
-				5E83A31F2CDE4AB7003788CD /* CountryViewController.swift */,
-				5E83A3322CDE4DAC003788CD /* CountryCell.swift */,
+				5E83A3372CDE8257003788CD /* CountryList */,
+				5E83A3362CDE7FC7003788CD /* Networking */,
 				5E83A3312CDE4D3E003788CD /* Files */,
 			);
 			path = iostask;
@@ -84,6 +85,16 @@
 				5E83A32F2CDE4D2C003788CD /* Country.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		5E83A3372CDE8257003788CD /* CountryList */ = {
+			isa = PBXGroup;
+			children = (
+				5E83A31F2CDE4AB7003788CD /* CountryViewController.swift */,
+				5E83A3322CDE4DAC003788CD /* CountryCell.swift */,
+				5E9193982CDF2715009B97FF /* CountryView.swift */,
+			);
+			path = CountryList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +170,7 @@
 				5E83A3332CDE4DAC003788CD /* CountryCell.swift in Sources */,
 				5E83A3352CDE7DE2003788CD /* CountryService.swift in Sources */,
 				5E83A3202CDE4AB7003788CD /* CountryViewController.swift in Sources */,
+				5E9193992CDF2715009B97FF /* CountryView.swift in Sources */,
 				5E83A3302CDE4D2C003788CD /* Country.swift in Sources */,
 				5E83A31C2CDE4AB7003788CD /* AppDelegate.swift in Sources */,
 			);
@@ -302,11 +314,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_USE_OPTIMIZATION_PROFILE = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 386NUBNWC7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = iostask/Info.plist;
+				INFOPLIST_FILE = iostask/Files/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -329,11 +342,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_USE_OPTIMIZATION_PROFILE = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 386NUBNWC7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = iostask/Info.plist;
+				INFOPLIST_FILE = iostask/Files/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

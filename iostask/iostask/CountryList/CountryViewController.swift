@@ -34,7 +34,7 @@ extension CountryViewController {
         tableView.dataSource = self
         tableView.register(CountryCell.self, forCellReuseIdentifier: "cell")
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.rowHeight = 150
+        tableView.rowHeight = 200
     }
     
     func style() {
@@ -69,6 +69,7 @@ extension CountryViewController:  UITableViewDataSource {
 extension CountryViewController:  UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        navigationController?.pushViewController(CountryDetailViewController(country: countries[indexPath.row]), animated: true)
     }
 }
 // networking

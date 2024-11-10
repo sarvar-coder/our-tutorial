@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Kingfisher
 
 class CountryCell: UITableViewCell {
     
@@ -36,7 +37,7 @@ extension CountryCell {
         
         flagImageView.translatesAutoresizingMaskIntoConstraints = false
         flagImageView.contentMode = .scaleAspectFit
-        flagImageView.image = UIImage(systemName: "flag")
+//        flagImageView.image = UIImage(systemName: "flag")
         
         countryView.translatesAutoresizingMaskIntoConstraints = false
     
@@ -78,8 +79,8 @@ Recall that the snapshot is just an image of the app’s current display. With t
             trailingAnchor.constraint(equalToSystemSpacingAfter: descriptionLabel.trailingAnchor, multiplier: 1)
         ])
         // flag image view  height and width
-        flagImageView.widthAnchor.constraint(equalToConstant: 70).isActive = true
-        flagImageView.heightAnchor.constraint(equalToConstant: 100).isActive = true
+        flagImageView.widthAnchor.constraint(equalToConstant: 100).isActive = true
+        flagImageView.heightAnchor.constraint(equalToConstant: 80).isActive = true
         // chevron image
         chevronImage.widthAnchor.constraint(equalToConstant: 24).isActive = true
         chevronImage.heightAnchor.constraint(equalToConstant: 24).isActive = true
@@ -92,5 +93,10 @@ extension CountryCell {
         countryView.countryLabel.text = country.name
         countryView.capitalLabel.text = country.capital
         descriptionLabel.text = country.description_small
+        if let url = URL(string: country.country_info.flag) {
+            flagImageView.kf.setImage(with: url)
+        } else {
+            flagImageView.image = UIImage(systemName: "photo.badge.exclamationmark.fill")
+        }
     }
 }

@@ -12,7 +12,7 @@ struct Countries: Codable {
     let countries: [Country]
 }
 
-struct Country: Codable {
+struct Country: Codable, Sendable {
     let name: String
     let continent: String
     let capital: String

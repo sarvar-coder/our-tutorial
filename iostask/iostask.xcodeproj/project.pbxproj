@@ -15,6 +15,9 @@
 		5E83A3332CDE4DAC003788CD /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E83A3322CDE4DAC003788CD /* CountryCell.swift */; };
 		5E83A3352CDE7DE2003788CD /* CountryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E83A3342CDE7DE2003788CD /* CountryService.swift */; };
 		5E9193992CDF2715009B97FF /* CountryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9193982CDF2715009B97FF /* CountryView.swift */; };
+		5E91939B2CDF3631009B97FF /* CountryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E91939A2CDF3631009B97FF /* CountryDetailViewController.swift */; };
+		5E91939E2CDF75C8009B97FF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5E91939D2CDF75C8009B97FF /* Kingfisher */; };
+		5E9193A12CDF8883009B97FF /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9193A02CDF8883009B97FF /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,8 @@
 		5E83A3322CDE4DAC003788CD /* CountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
 		5E83A3342CDE7DE2003788CD /* CountryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryService.swift; sourceTree = "<group>"; };
 		5E9193982CDF2715009B97FF /* CountryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryView.swift; sourceTree = "<group>"; };
+		5E91939A2CDF3631009B97FF /* CountryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailViewController.swift; sourceTree = "<group>"; };
+		5E9193A02CDF8883009B97FF /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E91939E2CDF75C8009B97FF /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +68,7 @@
 			children = (
 				5E83A31B2CDE4AB7003788CD /* AppDelegate.swift */,
 				5E83A3372CDE8257003788CD /* CountryList */,
+				5E91939F2CDF833C009B97FF /* CountryDetail */,
 				5E83A3362CDE7FC7003788CD /* Networking */,
 				5E83A3312CDE4D3E003788CD /* Files */,
 			);
@@ -97,6 +104,15 @@
 			path = CountryList;
 			sourceTree = "<group>";
 		};
+		5E91939F2CDF833C009B97FF /* CountryDetail */ = {
+			isa = PBXGroup;
+			children = (
+				5E91939A2CDF3631009B97FF /* CountryDetailViewController.swift */,
+				5E9193A02CDF8883009B97FF /* DetailView.swift */,
+			);
+			path = CountryDetail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,6 +129,9 @@
 			dependencies = (
 			);
 			name = iostask;
+			packageProductDependencies = (
+				5E91939D2CDF75C8009B97FF /* Kingfisher */,
+			);
 			productName = iostask;
 			productReference = 5E83A3182CDE4AB7003788CD /* iostask.app */;
 			productType = "com.apple.product-type.application";
@@ -141,6 +160,9 @@
 				Base,
 			);
 			mainGroup = 5E83A30F2CDE4AB7003788CD;
+			packageReferences = (
+				5E91939C2CDF75C7009B97FF /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 5E83A3192CDE4AB7003788CD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -168,9 +190,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E83A3332CDE4DAC003788CD /* CountryCell.swift in Sources */,
+				5E9193A12CDF8883009B97FF /* DetailView.swift in Sources */,
 				5E83A3352CDE7DE2003788CD /* CountryService.swift in Sources */,
 				5E83A3202CDE4AB7003788CD /* CountryViewController.swift in Sources */,
 				5E9193992CDF2715009B97FF /* CountryView.swift in Sources */,
+				5E91939B2CDF3631009B97FF /* CountryDetailViewController.swift in Sources */,
 				5E83A3302CDE4D2C003788CD /* Country.swift in Sources */,
 				5E83A31C2CDE4AB7003788CD /* AppDelegate.swift in Sources */,
 			);
@@ -387,6 +411,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5E91939C2CDF75C7009B97FF /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5E91939D2CDF75C8009B97FF /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E91939C2CDF75C7009B97FF /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5E83A3102CDE4AB7003788CD /* Project object */;
 }

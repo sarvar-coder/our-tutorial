@@ -34,7 +34,7 @@ extension CountryViewController {
         tableView.dataSource = self
         tableView.register(CountryCell.self, forCellReuseIdentifier: "cell")
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.rowHeight = 200
+        tableView.rowHeight = 60
     }
     
     func style() {

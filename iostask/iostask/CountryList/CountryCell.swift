@@ -14,7 +14,7 @@ class CountryCell: UITableViewCell {
     let HstackView = UIStackView()
     let flagImageView = UIImageView()
     let chevronImage = UIImageView()
-    let countryView = CountryView()
+    let countryView = CountryView() // it contains capital and country name labels
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)

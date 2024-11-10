@@ -14,7 +14,6 @@ class CountryCell: UITableViewCell {
     let HstackView = UIStackView()
     let flagImageView = UIImageView()
     let chevronImage = UIImageView()
-    let descriptionLabel = UILabel()
     let countryView = CountryView()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -47,14 +46,7 @@ extension CountryCell {
         chevronImage.image = image
         chevronImage.tintColor = .secondaryLabel
         
-        descriptionLabel.translatesAutoresizingMaskIntoConstraints = false
-        descriptionLabel.textAlignment = .center
-        descriptionLabel.text = """
-Recall that the snapshot is just an image of the app’s current display. With that in mind, you could make a custom View for when watchOS takes a snapshot and completely redesign the UI. Don’t do that.
-"""
-        descriptionLabel.adjustsFontForContentSizeCategory = true
-        descriptionLabel.numberOfLines = 0
-        descriptionLabel.lineBreakMode = .byWordWrapping
+ 
     }
     
     private func layout() {
@@ -64,19 +56,12 @@ Recall that the snapshot is just an image of the app’s current display. With t
         HstackView.addArrangedSubview(chevronImage)
         
         addSubview(HstackView)
-        addSubview(descriptionLabel)
 //        HstackView
         NSLayoutConstraint.activate([
             HstackView.topAnchor.constraint(equalToSystemSpacingBelow: topAnchor, multiplier: 1),
             HstackView.leadingAnchor.constraint(equalToSystemSpacingAfter: leadingAnchor, multiplier: 1),
             trailingAnchor.constraint(equalToSystemSpacingAfter: HstackView.trailingAnchor, multiplier: 1),
             HstackView.heightAnchor.constraint(equalTo: flagImageView.heightAnchor, multiplier: 1)
-        ])
-        // description label
-        NSLayoutConstraint.activate([
-            descriptionLabel.topAnchor.constraint(equalToSystemSpacingBelow: HstackView.bottomAnchor, multiplier: 2),
-            descriptionLabel.leadingAnchor.constraint(equalToSystemSpacingAfter: leadingAnchor, multiplier: 1),
-            trailingAnchor.constraint(equalToSystemSpacingAfter: descriptionLabel.trailingAnchor, multiplier: 1)
         ])
         // flag image view  height and width
         flagImageView.widthAnchor.constraint(equalToConstant: 100).isActive = true
@@ -92,7 +77,6 @@ extension CountryCell {
     func configure(with country: Country) {
         countryView.countryLabel.text = country.name
         countryView.capitalLabel.text = country.capital
-        descriptionLabel.text = country.description_small
         if let url = URL(string: country.country_info.flag) {
             flagImageView.kf.setImage(with: url)
         } else {

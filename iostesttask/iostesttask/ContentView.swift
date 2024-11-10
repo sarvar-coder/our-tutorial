@@ -8,47 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var showAlarm = false
+    @State private var showSleepTime = false
     var body: some View {
         VStack {
-            Text("Playing")
-                .font(.title)
-                .bold()
-                .padding(.top)
-            Spacer()
-            Divider()
-                .background(.black)
-                .padding(.bottom)
+        
+            HeaderView()
             
-            VStack {
-                HStack {
-                    Text("Sleep timer")
-                    
-                    Spacer()
-                    Button {
-                        
-                    } label: {
-                        Text("20 min")
-                    }
-                }
-                
-                Divider()
-                    .background(.black)
-                    .padding([.top, .bottom])
-                HStack {
-                    Text("Alarm")
-                    Spacer()
-                    Button {
-                        
-                    } label: {
-                        Text("08:30 am")
-                    }
-                }
-                Divider()
-                    .background(.black)
-                    .padding(.top)
-            }
-            .padding([.bottom], 90)
-            
+            SleepAlarmView(showAlarm: $showAlarm)
             
             Button {
                 
@@ -66,3 +34,5 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
+
+

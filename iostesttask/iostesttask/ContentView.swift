@@ -11,12 +11,13 @@ struct ContentView: View {
     
     @State private var showAlarm = false
     @State private var showSleepTime = false
+    @State private var wakeUp = Date.now
     var body: some View {
         VStack {
         
             HeaderView()
             
-            SleepAlarmView(showAlarm: $showAlarm)
+            SleepAlarmView(showAlarm: $showAlarm, wakeUp: $wakeUp)
             
             Button {
                 

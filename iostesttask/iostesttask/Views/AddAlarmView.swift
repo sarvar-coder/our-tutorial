@@ -9,9 +9,15 @@ import SwiftUI
 
 struct AddAlarmView: View {
     @Environment(\.dismiss) private var dismiss
+    @Binding var wakeUp: Date
     var body: some View {
         VStack {
-            Text("Hello bug!")
+            HStack {
+              
+                DatePicker("", selection: $wakeUp,displayedComponents: .hourAndMinute)
+                    .pickerStyle(.wheel)
+                    .padding([.trailing], 160)
+            }
             
         }
         
@@ -40,6 +46,6 @@ struct AddAlarmView: View {
 
 #Preview {
     NavigationStack {
-        AddAlarmView()
+        AddAlarmView(wakeUp: .constant(.now))
     }
 }

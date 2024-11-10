@@ -10,6 +10,7 @@ import SwiftUI
 struct SleepAlarmView: View {
     
     @Binding  var showAlarm: Bool
+    @Binding var wakeUp: Date
     var body: some View {
         VStack {
             
@@ -50,8 +51,7 @@ struct SleepAlarmView: View {
         
         .sheet(isPresented: $showAlarm, content: {
             NavigationStack {
-                AddAlarmView()
-                    
+                AddAlarmView(wakeUp: $wakeUp)
             }
             .presentationDetents([.fraction(0.4)])
         })
@@ -59,5 +59,5 @@ struct SleepAlarmView: View {
 }
 
 #Preview {
-    SleepAlarmView(showAlarm: .constant(false))
+    SleepAlarmView(showAlarm: .constant(false), wakeUp: .constant(.now))
 }

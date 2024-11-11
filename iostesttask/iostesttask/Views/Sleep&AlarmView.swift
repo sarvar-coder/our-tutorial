@@ -10,7 +10,9 @@ import SwiftUI
 struct SleepAlarmView: View {
     
     @Binding  var showAlarm: Bool
+    @Binding  var showSleepTime: Bool
     @Binding var wakeUp: Date
+    var array = ["off", "5 min", "10 min", "15 min", "20 min"]
     var body: some View {
         VStack {
             
@@ -23,14 +25,34 @@ struct SleepAlarmView: View {
                 Text("Sleep timer")
                 
                 Spacer()
-                Button {
-                    
-                } label: {
-                    Text("20 min")
+                Button("20 min") {
+                    showSleepTime.toggle()
                 }
+//                } label: {
+//                    Text("20 min")
+//                }
+                .confirmationDialog("", isPresented: $showSleepTime) {
+                    
+                    Button("Off") {
+                        
+                    }
+                    Button("5 min") {
+                        
+                    }
+                    Button("10 min") {
+                        
+                    }
+                    Button("15 min") {
+                        
+                    }
+                    Button("20 min") {
+                        
+                    }
+                } message: {
+                    Text("Sleep Timer")
+                }   
             }
-            
-            
+                        
             Divider()
                 .background(.black)
                 .padding([.top, .bottom])
@@ -40,7 +62,7 @@ struct SleepAlarmView: View {
                 Button {
                     showAlarm.toggle()
                 } label: {
-                    Text("08:30 am")
+                    Text(wakeUp.onlyTime)
                 }
             }
             Divider()
@@ -59,5 +81,5 @@ struct SleepAlarmView: View {
 }
 
 #Preview {
-    SleepAlarmView(showAlarm: .constant(false), wakeUp: .constant(.now))
+    SleepAlarmView(showAlarm: .constant(false), showSleepTime: .constant(false), wakeUp: .constant(.now))
 }

@@ -17,7 +17,7 @@ struct ContentView: View {
         
             HeaderView()
             
-            SleepAlarmView(showAlarm: $showAlarm, wakeUp: $wakeUp)
+            SleepAlarmView(showAlarm: $showAlarm, showSleepTime: $showSleepTime, wakeUp: $wakeUp)
             
             Button {
                 

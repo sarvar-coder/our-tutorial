@@ -15,6 +15,8 @@
 		5E88049F2CE0B835006F22F2 /* Sleep&AlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E88049E2CE0B835006F22F2 /* Sleep&AlarmView.swift */; };
 		5E8804A12CE0B9BF006F22F2 /* AddAlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8804A02CE0B9BF006F22F2 /* AddAlarmView.swift */; };
 		5E8804A42CE0C1D4006F22F2 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8804A32CE0C1D4006F22F2 /* Date+Ext.swift */; };
+		5E8804C92CE1DEF2006F22F2 /* alarm.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5E8804C82CE1DEF2006F22F2 /* alarm.m4a */; };
+		5E8804CB2CE1DEFC006F22F2 /* nature.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5E8804CA2CE1DEFC006F22F2 /* nature.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		5E88049E2CE0B835006F22F2 /* Sleep&AlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sleep&AlarmView.swift"; sourceTree = "<group>"; };
 		5E8804A02CE0B9BF006F22F2 /* AddAlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlarmView.swift; sourceTree = "<group>"; };
 		5E8804A32CE0C1D4006F22F2 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		5E8804C82CE1DEF2006F22F2 /* alarm.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = alarm.m4a; sourceTree = "<group>"; };
+		5E8804CA2CE1DEFC006F22F2 /* nature.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = nature.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +63,11 @@
 		5E88048C2CE0B47C006F22F2 /* iostesttask */ = {
 			isa = PBXGroup;
 			children = (
-				5E8804A22CE0C1C5006F22F2 /* Extension */,
-				5E88049B2CE0B7A7006F22F2 /* Views */,
 				5E88048D2CE0B47C006F22F2 /* iostesttaskApp.swift */,
 				5E88048F2CE0B47C006F22F2 /* ContentView.swift */,
+				5E88049B2CE0B7A7006F22F2 /* Views */,
+				5E8804A22CE0C1C5006F22F2 /* Extension */,
+				5E8804C72CE1DED5006F22F2 /* Sounds */,
 				5E8804912CE0B47E006F22F2 /* Assets.xcassets */,
 				5E8804932CE0B47E006F22F2 /* Preview Content */,
 			);
@@ -93,6 +98,15 @@
 				5E8804A32CE0C1D4006F22F2 /* Date+Ext.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		5E8804C72CE1DED5006F22F2 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				5E8804CA2CE1DEFC006F22F2 /* nature.m4a */,
+				5E8804C82CE1DEF2006F22F2 /* alarm.m4a */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,7 +168,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E8804952CE0B47E006F22F2 /* Preview Assets.xcassets in Resources */,
+				5E8804CB2CE1DEFC006F22F2 /* nature.m4a in Resources */,
 				5E8804922CE0B47E006F22F2 /* Assets.xcassets in Resources */,
+				5E8804C92CE1DEF2006F22F2 /* alarm.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

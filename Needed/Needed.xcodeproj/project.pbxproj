@@ -7,28 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E8804D92CE207BE006F22F2 /* StanfordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8804D82CE207BE006F22F2 /* StanfordApp.swift */; };
-		5E8804DB2CE207BE006F22F2 /* StanfordGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8804DA2CE207BE006F22F2 /* StanfordGameView.swift */; };
-		5E8804DD2CE207C2006F22F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E8804DC2CE207C2006F22F2 /* Assets.xcassets */; };
-		5E8804E02CE207C2006F22F2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E8804DF2CE207C2006F22F2 /* Preview Assets.xcassets */; };
-		5E9D0A952CE7676300A63540 /* StanfordGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9D0A942CE7676300A63540 /* StanfordGame.swift */; };
-		5E9D0A972CE7696300A63540 /* EmojiStanfordGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9D0A962CE7696300A63540 /* EmojiStanfordGame.swift */; };
-		5ED94C0E2CF0C14F0072FF24 /* AspectVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED94C0D2CF0C14F0072FF24 /* AspectVGrid.swift */; };
+		5E9D0A772CE5B89000A63540 /* NeededApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9D0A762CE5B89000A63540 /* NeededApp.swift */; };
+		5E9D0A792CE5B89000A63540 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9D0A782CE5B89000A63540 /* ContentView.swift */; };
+		5E9D0A7B2CE5B89200A63540 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E9D0A7A2CE5B89200A63540 /* Assets.xcassets */; };
+		5E9D0A7E2CE5B89200A63540 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E9D0A7D2CE5B89200A63540 /* Preview Assets.xcassets */; };
+		5E9D0A862CE5B8D900A63540 /* TaskModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5E9D0A842CE5B8D800A63540 /* TaskModel.xcdatamodeld */; };
+		5E9D0A882CE5B95800A63540 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9D0A872CE5B95800A63540 /* CoreDataManager.swift */; };
+		5E9D0A8A2CE5BC6B00A63540 /* TaskRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9D0A892CE5BC6B00A63540 /* TaskRowView.swift */; };
+		5E9D0A8C2CE5BCD000A63540 /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9D0A8B2CE5BCD000A63540 /* AddItemView.swift */; };
+		5E9D0A902CE5BD3000A63540 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9D0A8F2CE5BD3000A63540 /* HeaderView.swift */; };
+		5E9D0A932CE6216C00A63540 /* TaskState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9D0A922CE6216C00A63540 /* TaskState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5E8804D52CE207BE006F22F2 /* Stanford.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stanford.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E8804D82CE207BE006F22F2 /* StanfordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StanfordApp.swift; sourceTree = "<group>"; };
-		5E8804DA2CE207BE006F22F2 /* StanfordGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StanfordGameView.swift; sourceTree = "<group>"; };
-		5E8804DC2CE207C2006F22F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5E8804DF2CE207C2006F22F2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5E9D0A942CE7676300A63540 /* StanfordGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StanfordGame.swift; sourceTree = "<group>"; };
-		5E9D0A962CE7696300A63540 /* EmojiStanfordGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiStanfordGame.swift; sourceTree = "<group>"; };
-		5ED94C0D2CF0C14F0072FF24 /* AspectVGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectVGrid.swift; sourceTree = "<group>"; };
+		5E9D0A732CE5B89000A63540 /* Needed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Needed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E9D0A762CE5B89000A63540 /* NeededApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeededApp.swift; sourceTree = "<group>"; };
+		5E9D0A782CE5B89000A63540 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5E9D0A7A2CE5B89200A63540 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E9D0A7D2CE5B89200A63540 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5E9D0A852CE5B8D800A63540 /* NeedModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NeedModel.xcdatamodel; sourceTree = "<group>"; };
+		5E9D0A872CE5B95800A63540 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		5E9D0A892CE5BC6B00A63540 /* TaskRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRowView.swift; sourceTree = "<group>"; };
+		5E9D0A8B2CE5BCD000A63540 /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
+		5E9D0A8F2CE5BD3000A63540 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		5E9D0A922CE6216C00A63540 /* TaskState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5E8804D22CE207BE006F22F2 /* Frameworks */ = {
+		5E9D0A702CE5B89000A63540 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,80 +44,107 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5E8804CC2CE207BE006F22F2 = {
+		5E9D0A6A2CE5B89000A63540 = {
 			isa = PBXGroup;
 			children = (
-				5E8804D72CE207BE006F22F2 /* Stanford */,
-				5E8804D62CE207BE006F22F2 /* Products */,
+				5E9D0A752CE5B89000A63540 /* Needed */,
+				5E9D0A742CE5B89000A63540 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		5E8804D62CE207BE006F22F2 /* Products */ = {
+		5E9D0A742CE5B89000A63540 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5E8804D52CE207BE006F22F2 /* Stanford.app */,
+				5E9D0A732CE5B89000A63540 /* Needed.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5E8804D72CE207BE006F22F2 /* Stanford */ = {
+		5E9D0A752CE5B89000A63540 /* Needed */ = {
 			isa = PBXGroup;
 			children = (
-				5E8804D82CE207BE006F22F2 /* StanfordApp.swift */,
-				5E8804DA2CE207BE006F22F2 /* StanfordGameView.swift */,
-				5E9D0A942CE7676300A63540 /* StanfordGame.swift */,
-				5E9D0A962CE7696300A63540 /* EmojiStanfordGame.swift */,
-				5E8804DC2CE207C2006F22F2 /* Assets.xcassets */,
-				5E8804DE2CE207C2006F22F2 /* Preview Content */,
-				5ED94C0D2CF0C14F0072FF24 /* AspectVGrid.swift */,
+				5E9D0A762CE5B89000A63540 /* NeededApp.swift */,
+				5E9D0A8D2CE5BCDD00A63540 /* Views */,
+				5E9D0A8E2CE5BCF200A63540 /* Mangers */,
+				5E9D0A912CE6017B00A63540 /* Utils */,
+				5E9D0A7A2CE5B89200A63540 /* Assets.xcassets */,
+				5E9D0A7C2CE5B89200A63540 /* Preview Content */,
+				5E9D0A842CE5B8D800A63540 /* TaskModel.xcdatamodeld */,
 			);
-			path = Stanford;
+			path = Needed;
 			sourceTree = "<group>";
 		};
-		5E8804DE2CE207C2006F22F2 /* Preview Content */ = {
+		5E9D0A7C2CE5B89200A63540 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				5E8804DF2CE207C2006F22F2 /* Preview Assets.xcassets */,
+				5E9D0A7D2CE5B89200A63540 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5E9D0A8D2CE5BCDD00A63540 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5E9D0A782CE5B89000A63540 /* ContentView.swift */,
+				5E9D0A892CE5BC6B00A63540 /* TaskRowView.swift */,
+				5E9D0A8B2CE5BCD000A63540 /* AddItemView.swift */,
+				5E9D0A8F2CE5BD3000A63540 /* HeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5E9D0A8E2CE5BCF200A63540 /* Mangers */ = {
+			isa = PBXGroup;
+			children = (
+				5E9D0A872CE5B95800A63540 /* CoreDataManager.swift */,
+			);
+			path = Mangers;
+			sourceTree = "<group>";
+		};
+		5E9D0A912CE6017B00A63540 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5E9D0A922CE6216C00A63540 /* TaskState.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5E8804D42CE207BE006F22F2 /* Stanford */ = {
+		5E9D0A722CE5B89000A63540 /* Needed */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5E8804E32CE207C2006F22F2 /* Build configuration list for PBXNativeTarget "Stanford" */;
+			buildConfigurationList = 5E9D0A812CE5B89200A63540 /* Build configuration list for PBXNativeTarget "Needed" */;
 			buildPhases = (
-				5E8804D12CE207BE006F22F2 /* Sources */,
-				5E8804D22CE207BE006F22F2 /* Frameworks */,
-				5E8804D32CE207BE006F22F2 /* Resources */,
+				5E9D0A6F2CE5B89000A63540 /* Sources */,
+				5E9D0A702CE5B89000A63540 /* Frameworks */,
+				5E9D0A712CE5B89000A63540 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Stanford;
-			productName = Stanford;
-			productReference = 5E8804D52CE207BE006F22F2 /* Stanford.app */;
+			name = Needed;
+			productName = Needed;
+			productReference = 5E9D0A732CE5B89000A63540 /* Needed.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5E8804CD2CE207BE006F22F2 /* Project object */ = {
+		5E9D0A6B2CE5B89000A63540 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					5E8804D42CE207BE006F22F2 = {
+					5E9D0A722CE5B89000A63540 = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
 				};
 			};
-			buildConfigurationList = 5E8804D02CE207BE006F22F2 /* Build configuration list for PBXProject "Stanford" */;
+			buildConfigurationList = 5E9D0A6E2CE5B89000A63540 /* Build configuration list for PBXProject "Needed" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -119,45 +152,48 @@
 				en,
 				Base,
 			);
-			mainGroup = 5E8804CC2CE207BE006F22F2;
-			productRefGroup = 5E8804D62CE207BE006F22F2 /* Products */;
+			mainGroup = 5E9D0A6A2CE5B89000A63540;
+			productRefGroup = 5E9D0A742CE5B89000A63540 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5E8804D42CE207BE006F22F2 /* Stanford */,
+				5E9D0A722CE5B89000A63540 /* Needed */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5E8804D32CE207BE006F22F2 /* Resources */ = {
+		5E9D0A712CE5B89000A63540 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E8804E02CE207C2006F22F2 /* Preview Assets.xcassets in Resources */,
-				5E8804DD2CE207C2006F22F2 /* Assets.xcassets in Resources */,
+				5E9D0A7E2CE5B89200A63540 /* Preview Assets.xcassets in Resources */,
+				5E9D0A7B2CE5B89200A63540 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5E8804D12CE207BE006F22F2 /* Sources */ = {
+		5E9D0A6F2CE5B89000A63540 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E8804DB2CE207BE006F22F2 /* StanfordGameView.swift in Sources */,
-				5E9D0A972CE7696300A63540 /* EmojiStanfordGame.swift in Sources */,
-				5E9D0A952CE7676300A63540 /* StanfordGame.swift in Sources */,
-				5ED94C0E2CF0C14F0072FF24 /* AspectVGrid.swift in Sources */,
-				5E8804D92CE207BE006F22F2 /* StanfordApp.swift in Sources */,
+				5E9D0A792CE5B89000A63540 /* ContentView.swift in Sources */,
+				5E9D0A8C2CE5BCD000A63540 /* AddItemView.swift in Sources */,
+				5E9D0A862CE5B8D900A63540 /* TaskModel.xcdatamodeld in Sources */,
+				5E9D0A882CE5B95800A63540 /* CoreDataManager.swift in Sources */,
+				5E9D0A8A2CE5BC6B00A63540 /* TaskRowView.swift in Sources */,
+				5E9D0A772CE5B89000A63540 /* NeededApp.swift in Sources */,
+				5E9D0A932CE6216C00A63540 /* TaskState.swift in Sources */,
+				5E9D0A902CE5BD3000A63540 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		5E8804E12CE207C2006F22F2 /* Debug */ = {
+		5E9D0A7F2CE5B89200A63540 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -220,7 +256,7 @@
 			};
 			name = Debug;
 		};
-		5E8804E22CE207C2006F22F2 /* Release */ = {
+		5E9D0A802CE5B89200A63540 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -276,14 +312,14 @@
 			};
 			name = Release;
 		};
-		5E8804E42CE207C2006F22F2 /* Debug */ = {
+		5E9D0A822CE5B89200A63540 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Stanford/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Needed/Preview Content\"";
 				DEVELOPMENT_TEAM = 386NUBNWC7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -297,7 +333,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = bss.dev.Stanford;
+				PRODUCT_BUNDLE_IDENTIFIER = bss.dev.Needed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -305,14 +341,14 @@
 			};
 			name = Debug;
 		};
-		5E8804E52CE207C2006F22F2 /* Release */ = {
+		5E9D0A832CE5B89200A63540 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Stanford/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Needed/Preview Content\"";
 				DEVELOPMENT_TEAM = 386NUBNWC7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -326,7 +362,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = bss.dev.Stanford;
+				PRODUCT_BUNDLE_IDENTIFIER = bss.dev.Needed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -337,25 +373,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5E8804D02CE207BE006F22F2 /* Build configuration list for PBXProject "Stanford" */ = {
+		5E9D0A6E2CE5B89000A63540 /* Build configuration list for PBXProject "Needed" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5E8804E12CE207C2006F22F2 /* Debug */,
-				5E8804E22CE207C2006F22F2 /* Release */,
+				5E9D0A7F2CE5B89200A63540 /* Debug */,
+				5E9D0A802CE5B89200A63540 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5E8804E32CE207C2006F22F2 /* Build configuration list for PBXNativeTarget "Stanford" */ = {
+		5E9D0A812CE5B89200A63540 /* Build configuration list for PBXNativeTarget "Needed" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5E8804E42CE207C2006F22F2 /* Debug */,
-				5E8804E52CE207C2006F22F2 /* Release */,
+				5E9D0A822CE5B89200A63540 /* Debug */,
+				5E9D0A832CE5B89200A63540 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5E9D0A842CE5B8D800A63540 /* TaskModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5E9D0A852CE5B8D800A63540 /* NeedModel.xcdatamodel */,
+			);
+			currentVersion = 5E9D0A852CE5B8D800A63540 /* NeedModel.xcdatamodel */;
+			path = TaskModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = 5E8804CD2CE207BE006F22F2 /* Project object */;
+	rootObject = 5E9D0A6B2CE5B89000A63540 /* Project object */;
 }

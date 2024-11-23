@@ -7,28 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E8804D92CE207BE006F22F2 /* StanfordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8804D82CE207BE006F22F2 /* StanfordApp.swift */; };
-		5E8804DB2CE207BE006F22F2 /* StanfordGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8804DA2CE207BE006F22F2 /* StanfordGameView.swift */; };
-		5E8804DD2CE207C2006F22F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E8804DC2CE207C2006F22F2 /* Assets.xcassets */; };
-		5E8804E02CE207C2006F22F2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E8804DF2CE207C2006F22F2 /* Preview Assets.xcassets */; };
-		5E9D0A952CE7676300A63540 /* StanfordGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9D0A942CE7676300A63540 /* StanfordGame.swift */; };
-		5E9D0A972CE7696300A63540 /* EmojiStanfordGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9D0A962CE7696300A63540 /* EmojiStanfordGame.swift */; };
-		5ED94C0E2CF0C14F0072FF24 /* AspectVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED94C0D2CF0C14F0072FF24 /* AspectVGrid.swift */; };
+		5ED94C1C2CF17D9E0072FF24 /* ToDoTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED94C1B2CF17D9E0072FF24 /* ToDoTestApp.swift */; };
+		5ED94C1E2CF17D9E0072FF24 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED94C1D2CF17D9E0072FF24 /* ContentView.swift */; };
+		5ED94C202CF17DA10072FF24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ED94C1F2CF17DA10072FF24 /* Assets.xcassets */; };
+		5ED94C232CF17DA10072FF24 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ED94C222CF17DA10072FF24 /* Preview Assets.xcassets */; };
+		5ED94C2A2CF181000072FF24 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED94C292CF181000072FF24 /* HeaderView.swift */; };
+		5ED94C2C2CF1840D0072FF24 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED94C2B2CF1840D0072FF24 /* MainView.swift */; };
+		5ED94C2F2CF186800072FF24 /* TodoModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5ED94C2D2CF186800072FF24 /* TodoModel.xcdatamodeld */; };
+		5ED94C312CF186DF0072FF24 /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED94C302CF186DF0072FF24 /* CoreDataProvider.swift */; };
+		5ED94C332CF188EA0072FF24 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED94C322CF188EA0072FF24 /* TodoView.swift */; };
+		5ED94C352CF19E000072FF24 /* SegmentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED94C342CF19E000072FF24 /* SegmentedView.swift */; };
+		5ED94C372CF1A4400072FF24 /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED94C362CF1A4400072FF24 /* BadgeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5E8804D52CE207BE006F22F2 /* Stanford.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stanford.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E8804D82CE207BE006F22F2 /* StanfordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StanfordApp.swift; sourceTree = "<group>"; };
-		5E8804DA2CE207BE006F22F2 /* StanfordGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StanfordGameView.swift; sourceTree = "<group>"; };
-		5E8804DC2CE207C2006F22F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5E8804DF2CE207C2006F22F2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5E9D0A942CE7676300A63540 /* StanfordGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StanfordGame.swift; sourceTree = "<group>"; };
-		5E9D0A962CE7696300A63540 /* EmojiStanfordGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiStanfordGame.swift; sourceTree = "<group>"; };
-		5ED94C0D2CF0C14F0072FF24 /* AspectVGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectVGrid.swift; sourceTree = "<group>"; };
+		5ED94C182CF17D9E0072FF24 /* ToDoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ED94C1B2CF17D9E0072FF24 /* ToDoTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTestApp.swift; sourceTree = "<group>"; };
+		5ED94C1D2CF17D9E0072FF24 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5ED94C1F2CF17DA10072FF24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5ED94C222CF17DA10072FF24 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5ED94C292CF181000072FF24 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		5ED94C2B2CF1840D0072FF24 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		5ED94C2E2CF186800072FF24 /* TodoModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TodoModel.xcdatamodel; sourceTree = "<group>"; };
+		5ED94C302CF186DF0072FF24 /* CoreDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProvider.swift; sourceTree = "<group>"; };
+		5ED94C322CF188EA0072FF24 /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
+		5ED94C342CF19E000072FF24 /* SegmentedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedView.swift; sourceTree = "<group>"; };
+		5ED94C362CF1A4400072FF24 /* BadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5E8804D22CE207BE006F22F2 /* Frameworks */ = {
+		5ED94C152CF17D9E0072FF24 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,40 +46,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5E8804CC2CE207BE006F22F2 = {
+		5ED94C0F2CF17D9E0072FF24 = {
 			isa = PBXGroup;
 			children = (
-				5E8804D72CE207BE006F22F2 /* Stanford */,
-				5E8804D62CE207BE006F22F2 /* Products */,
+				5ED94C1A2CF17D9E0072FF24 /* ToDoTest */,
+				5ED94C192CF17D9E0072FF24 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		5E8804D62CE207BE006F22F2 /* Products */ = {
+		5ED94C192CF17D9E0072FF24 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5E8804D52CE207BE006F22F2 /* Stanford.app */,
+				5ED94C182CF17D9E0072FF24 /* ToDoTest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5E8804D72CE207BE006F22F2 /* Stanford */ = {
+		5ED94C1A2CF17D9E0072FF24 /* ToDoTest */ = {
 			isa = PBXGroup;
 			children = (
-				5E8804D82CE207BE006F22F2 /* StanfordApp.swift */,
-				5E8804DA2CE207BE006F22F2 /* StanfordGameView.swift */,
-				5E9D0A942CE7676300A63540 /* StanfordGame.swift */,
-				5E9D0A962CE7696300A63540 /* EmojiStanfordGame.swift */,
-				5E8804DC2CE207C2006F22F2 /* Assets.xcassets */,
-				5E8804DE2CE207C2006F22F2 /* Preview Content */,
-				5ED94C0D2CF0C14F0072FF24 /* AspectVGrid.swift */,
+				5ED94C1B2CF17D9E0072FF24 /* ToDoTestApp.swift */,
+				5ED94C1D2CF17D9E0072FF24 /* ContentView.swift */,
+				5ED94C292CF181000072FF24 /* HeaderView.swift */,
+				5ED94C2B2CF1840D0072FF24 /* MainView.swift */,
+				5ED94C322CF188EA0072FF24 /* TodoView.swift */,
+				5ED94C1F2CF17DA10072FF24 /* Assets.xcassets */,
+				5ED94C212CF17DA10072FF24 /* Preview Content */,
+				5ED94C2D2CF186800072FF24 /* TodoModel.xcdatamodeld */,
+				5ED94C302CF186DF0072FF24 /* CoreDataProvider.swift */,
+				5ED94C342CF19E000072FF24 /* SegmentedView.swift */,
+				5ED94C362CF1A4400072FF24 /* BadgeView.swift */,
 			);
-			path = Stanford;
+			path = ToDoTest;
 			sourceTree = "<group>";
 		};
-		5E8804DE2CE207C2006F22F2 /* Preview Content */ = {
+		5ED94C212CF17DA10072FF24 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				5E8804DF2CE207C2006F22F2 /* Preview Assets.xcassets */,
+				5ED94C222CF17DA10072FF24 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -79,39 +91,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5E8804D42CE207BE006F22F2 /* Stanford */ = {
+		5ED94C172CF17D9E0072FF24 /* ToDoTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5E8804E32CE207C2006F22F2 /* Build configuration list for PBXNativeTarget "Stanford" */;
+			buildConfigurationList = 5ED94C262CF17DA10072FF24 /* Build configuration list for PBXNativeTarget "ToDoTest" */;
 			buildPhases = (
-				5E8804D12CE207BE006F22F2 /* Sources */,
-				5E8804D22CE207BE006F22F2 /* Frameworks */,
-				5E8804D32CE207BE006F22F2 /* Resources */,
+				5ED94C142CF17D9E0072FF24 /* Sources */,
+				5ED94C152CF17D9E0072FF24 /* Frameworks */,
+				5ED94C162CF17D9E0072FF24 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Stanford;
-			productName = Stanford;
-			productReference = 5E8804D52CE207BE006F22F2 /* Stanford.app */;
+			name = ToDoTest;
+			productName = ToDoTest;
+			productReference = 5ED94C182CF17D9E0072FF24 /* ToDoTest.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5E8804CD2CE207BE006F22F2 /* Project object */ = {
+		5ED94C102CF17D9E0072FF24 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					5E8804D42CE207BE006F22F2 = {
+					5ED94C172CF17D9E0072FF24 = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
 				};
 			};
-			buildConfigurationList = 5E8804D02CE207BE006F22F2 /* Build configuration list for PBXProject "Stanford" */;
+			buildConfigurationList = 5ED94C132CF17D9E0072FF24 /* Build configuration list for PBXProject "ToDoTest" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -119,45 +131,49 @@
 				en,
 				Base,
 			);
-			mainGroup = 5E8804CC2CE207BE006F22F2;
-			productRefGroup = 5E8804D62CE207BE006F22F2 /* Products */;
+			mainGroup = 5ED94C0F2CF17D9E0072FF24;
+			productRefGroup = 5ED94C192CF17D9E0072FF24 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5E8804D42CE207BE006F22F2 /* Stanford */,
+				5ED94C172CF17D9E0072FF24 /* ToDoTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5E8804D32CE207BE006F22F2 /* Resources */ = {
+		5ED94C162CF17D9E0072FF24 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E8804E02CE207C2006F22F2 /* Preview Assets.xcassets in Resources */,
-				5E8804DD2CE207C2006F22F2 /* Assets.xcassets in Resources */,
+				5ED94C232CF17DA10072FF24 /* Preview Assets.xcassets in Resources */,
+				5ED94C202CF17DA10072FF24 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5E8804D12CE207BE006F22F2 /* Sources */ = {
+		5ED94C142CF17D9E0072FF24 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E8804DB2CE207BE006F22F2 /* StanfordGameView.swift in Sources */,
-				5E9D0A972CE7696300A63540 /* EmojiStanfordGame.swift in Sources */,
-				5E9D0A952CE7676300A63540 /* StanfordGame.swift in Sources */,
-				5ED94C0E2CF0C14F0072FF24 /* AspectVGrid.swift in Sources */,
-				5E8804D92CE207BE006F22F2 /* StanfordApp.swift in Sources */,
+				5ED94C2F2CF186800072FF24 /* TodoModel.xcdatamodeld in Sources */,
+				5ED94C1E2CF17D9E0072FF24 /* ContentView.swift in Sources */,
+				5ED94C332CF188EA0072FF24 /* TodoView.swift in Sources */,
+				5ED94C2A2CF181000072FF24 /* HeaderView.swift in Sources */,
+				5ED94C2C2CF1840D0072FF24 /* MainView.swift in Sources */,
+				5ED94C352CF19E000072FF24 /* SegmentedView.swift in Sources */,
+				5ED94C372CF1A4400072FF24 /* BadgeView.swift in Sources */,
+				5ED94C1C2CF17D9E0072FF24 /* ToDoTestApp.swift in Sources */,
+				5ED94C312CF186DF0072FF24 /* CoreDataProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		5E8804E12CE207C2006F22F2 /* Debug */ = {
+		5ED94C242CF17DA10072FF24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -220,7 +236,7 @@
 			};
 			name = Debug;
 		};
-		5E8804E22CE207C2006F22F2 /* Release */ = {
+		5ED94C252CF17DA10072FF24 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -276,14 +292,14 @@
 			};
 			name = Release;
 		};
-		5E8804E42CE207C2006F22F2 /* Debug */ = {
+		5ED94C272CF17DA10072FF24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Stanford/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ToDoTest/Preview Content\"";
 				DEVELOPMENT_TEAM = 386NUBNWC7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -297,7 +313,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = bss.dev.Stanford;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.ToDoTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -305,14 +321,14 @@
 			};
 			name = Debug;
 		};
-		5E8804E52CE207C2006F22F2 /* Release */ = {
+		5ED94C282CF17DA10072FF24 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Stanford/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ToDoTest/Preview Content\"";
 				DEVELOPMENT_TEAM = 386NUBNWC7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -326,7 +342,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = bss.dev.Stanford;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.ToDoTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -337,25 +353,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5E8804D02CE207BE006F22F2 /* Build configuration list for PBXProject "Stanford" */ = {
+		5ED94C132CF17D9E0072FF24 /* Build configuration list for PBXProject "ToDoTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5E8804E12CE207C2006F22F2 /* Debug */,
-				5E8804E22CE207C2006F22F2 /* Release */,
+				5ED94C242CF17DA10072FF24 /* Debug */,
+				5ED94C252CF17DA10072FF24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5E8804E32CE207C2006F22F2 /* Build configuration list for PBXNativeTarget "Stanford" */ = {
+		5ED94C262CF17DA10072FF24 /* Build configuration list for PBXNativeTarget "ToDoTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5E8804E42CE207C2006F22F2 /* Debug */,
-				5E8804E52CE207C2006F22F2 /* Release */,
+				5ED94C272CF17DA10072FF24 /* Debug */,
+				5ED94C282CF17DA10072FF24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5ED94C2D2CF186800072FF24 /* TodoModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5ED94C2E2CF186800072FF24 /* TodoModel.xcdatamodel */,
+			);
+			currentVersion = 5ED94C2E2CF186800072FF24 /* TodoModel.xcdatamodel */;
+			path = TodoModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = 5E8804CD2CE207BE006F22F2 /* Project object */;
+	rootObject = 5ED94C102CF17D9E0072FF24 /* Project object */;
 }

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E40222F2CF2E83300E0C493 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E40222E2CF2E83300E0C493 /* CardView.swift */; };
+		5E4022312CF2F64F00E0C493 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4022302CF2F64F00E0C493 /* Shape.swift */; };
+		5E4022332CF2FD1000E0C493 /* Cardify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4022322CF2FD1000E0C493 /* Cardify.swift */; };
 		5E8804D92CE207BE006F22F2 /* StanfordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8804D82CE207BE006F22F2 /* StanfordApp.swift */; };
 		5E8804DB2CE207BE006F22F2 /* StanfordGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8804DA2CE207BE006F22F2 /* StanfordGameView.swift */; };
 		5E8804DD2CE207C2006F22F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E8804DC2CE207C2006F22F2 /* Assets.xcassets */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E40222E2CF2E83300E0C493 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		5E4022302CF2F64F00E0C493 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+		5E4022322CF2FD1000E0C493 /* Cardify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cardify.swift; sourceTree = "<group>"; };
 		5E8804D52CE207BE006F22F2 /* Stanford.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stanford.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E8804D82CE207BE006F22F2 /* StanfordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StanfordApp.swift; sourceTree = "<group>"; };
 		5E8804DA2CE207BE006F22F2 /* StanfordGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StanfordGameView.swift; sourceTree = "<group>"; };
@@ -64,6 +70,9 @@
 				5E8804DC2CE207C2006F22F2 /* Assets.xcassets */,
 				5E8804DE2CE207C2006F22F2 /* Preview Content */,
 				5ED94C0D2CF0C14F0072FF24 /* AspectVGrid.swift */,
+				5E40222E2CF2E83300E0C493 /* CardView.swift */,
+				5E4022322CF2FD1000E0C493 /* Cardify.swift */,
+				5E4022302CF2F64F00E0C493 /* Shape.swift */,
 			);
 			path = Stanford;
 			sourceTree = "<group>";
@@ -148,8 +157,11 @@
 			files = (
 				5E8804DB2CE207BE006F22F2 /* StanfordGameView.swift in Sources */,
 				5E9D0A972CE7696300A63540 /* EmojiStanfordGame.swift in Sources */,
+				5E4022332CF2FD1000E0C493 /* Cardify.swift in Sources */,
 				5E9D0A952CE7676300A63540 /* StanfordGame.swift in Sources */,
+				5E4022312CF2F64F00E0C493 /* Shape.swift in Sources */,
 				5ED94C0E2CF0C14F0072FF24 /* AspectVGrid.swift in Sources */,
+				5E40222F2CF2E83300E0C493 /* CardView.swift in Sources */,
 				5E8804D92CE207BE006F22F2 /* StanfordApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

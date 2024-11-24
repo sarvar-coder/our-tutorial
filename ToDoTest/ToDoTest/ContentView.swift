@@ -8,19 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     @State private var showAddTaskView = false
+    
     var body: some View {
-        VStack(alignment: .leading) {
-            HeaderView(showAddTaskView: $showAddTaskView)
-                .padding(.bottom)
+     
+        ZStack {
             
-            MainView()
-            Spacer()
+            VStack(alignment: .leading) {
+                
+                HeaderView(showAddTaskView: $showAddTaskView)
+                    .padding()
+                
+                MainView()
+                
+                Spacer()
+            }
+            .sheet(isPresented: $showAddTaskView) { AddTaskView() }
         }
-        .padding()
+        .background(.gray.opacity(0.19))
     }
 }
 
 #Preview {
     ContentView()
+        .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
 }

@@ -10,6 +10,8 @@ import CoreData
 
 class CoreDataProvider {
     
+    static let shared = CoreDataProvider()
+    
     let persistentContainer: NSPersistentContainer
     
     var viewContext: NSManagedObjectContext {
@@ -22,10 +24,20 @@ class CoreDataProvider {
         let context = manager.viewContext
         
         let todo = TodoItems(context: context)
-        todo.id = 1
         todo.todo = "Do the lesson"
         todo.completed = true
-        todo.userId = 2
+        
+        
+        let todo1 = TodoItems(context: context)
+        todo1.todo = "Learn russian"
+        todo1.completed = false
+        
+        do {
+           try context.save()
+        } catch {
+            print(error.localizedDescription)
+        }
+        
         return manager
     }()
     

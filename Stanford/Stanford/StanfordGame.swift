@@ -54,7 +54,7 @@ struct StanfordGame<CardContent> where CardContent: Equatable {
     
     struct Card: Identifiable, Equatable, CustomDebugStringConvertible {
         let id = UUID()
-        var isFaceUp = false
+        var isFaceUp = true
         var isMatched = false
         let content: CardContent
         

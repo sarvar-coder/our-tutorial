@@ -11,27 +11,30 @@ struct SegmentedView: View {
     @Binding var selectedView: ShowState
     
     var body: some View {
+        
         VStack(alignment: .leading) {
+            
             HStack(spacing: 30) {
+                
                 HStack {
+                    
                     Text(ShowState.all.rawValue)
                         .foregroundColor(selectedView == .all ? .blue : .secondary)
                         .bold()
-                        
                     
                     BadgeView(count: 10, selectedView: selectedView == .all)
-                
                 }
                 .onTapGesture {
                     selectedView = .all
                 }
+                
                 ExDivider()
-                    
+                
                 HStack {
                     Text(ShowState.done.rawValue)
                         .foregroundColor(selectedView == .done ? .blue : .secondary)
                         .bold()
-                        
+                    
                     BadgeView(count: 10, selectedView: selectedView == .done)
                 }
                 .onTapGesture {
@@ -42,13 +45,12 @@ struct SegmentedView: View {
                     Text(ShowState.notDone.rawValue)
                         .foregroundColor(selectedView == .notDone ? .blue : .secondary)
                         .bold()
-                        
+                    
                     BadgeView(count: 5, selectedView: selectedView == .notDone)
                 }
                 .onTapGesture {
                     selectedView = .notDone
                 }
-                
             }
         }
     }

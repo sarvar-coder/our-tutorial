@@ -9,11 +9,12 @@ import Foundation
 import SwiftUI
 
 class EmojiStanfordGame: ObservableObject {
+    typealias Card = StanfordGame<String>.Card
     
    private static let emojis = ["🤬", "😟", "😠", "😃", "🧠", "🥳", "🪲", "🐣", "🥋", "🐳"]
     
     private static func createStanfordGame() -> StanfordGame<String> {
-        StanfordGame(numberOfPaiarsOfCards: 10) { pairIndex in
+        StanfordGame(numberOfPaiarsOfCards: 2) { pairIndex in
             if emojis.indices.contains(0) {
                 return emojis[pairIndex]
             } else {
@@ -21,10 +22,10 @@ class EmojiStanfordGame: ObservableObject {
             }
         }
     }
-     
+      
     @Published private var model = createStanfordGame()
     
-    var cards: Array<StanfordGame<String>.Card> {
+    var cards: Array<Card> {
         get { model.cards }
     }
     
@@ -34,7 +35,7 @@ class EmojiStanfordGame: ObservableObject {
         model.shuffle()
     }
     
-    func choose(card: StanfordGame<String>.Card) {
+    func choose(card: Card) {
         model.choose(card)
     }
 }

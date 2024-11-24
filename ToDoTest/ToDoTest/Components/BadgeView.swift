@@ -21,7 +21,3 @@ struct BadgeView: View {
             )
     }
 }
-
-//#Preview {
-//    BadgeView()
-//}

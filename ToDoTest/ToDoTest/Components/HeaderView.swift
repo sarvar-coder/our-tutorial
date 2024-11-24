@@ -10,30 +10,33 @@ import SwiftUI
 struct HeaderView: View {
     
     @Binding var showAddTaskView: Bool
+    @State private var todayDate = Date()
     
     var body: some View {
+        
         HStack {
+            
             VStack(alignment: .leading) {
-                Text("Bugungi Vazifalar")
+                
+                Text("Today's Task")
                     .font(.title)
                     .lineLimit(1)
-                Text("Chorshanba, 23 noy")
+                
+                Text(todayDate.dayAndMonth)
                     .foregroundColor(.secondary)
             }
+            
             Spacer()
             
             Button {
                 showAddTaskView.toggle()
             } label: {
-                    Image(systemName: "plus")
-                    Text("Yangi Vazifa")
+                Image(systemName: "plus")
+                Text("New Task")
             }
             .buttonStyle(.bordered)
             .tint(.blue)
-            
-            
         }
-        
     }
 }
 

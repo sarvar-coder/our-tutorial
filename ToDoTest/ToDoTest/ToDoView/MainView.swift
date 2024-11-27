@@ -10,18 +10,21 @@ import SwiftUI
 struct MainView: View {
     
     @State private var selectedTab: ShowState = .all
-    
+    @Binding var sheetState: SheetState?
+    @StateObject var viewModel: ViewModel
     var body: some View {
         
-        SegmentedView(selectedView: $selectedTab)
+        SegmentedView(selectedView: $selectedTab, count: viewModel.todos.count)
             .padding()
-        TodoView(selectedView: $selectedTab)
+        TodoView(selectedView: $selectedTab, sheetState: $sheetState, viewModel: viewModel)
  
     }
 }
 
 #Preview {
-    MainView()
+    MainView(
+        sheetState: .constant(.none), viewModel: ViewModel()
+    )
 }
 
 enum ShowState: String, CaseIterable {

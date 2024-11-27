@@ -8,17 +8,29 @@
 import SwiftUI
 
 struct AddTaskView: View {
+    
     @State private var text = ""
     @Environment(\.dismiss) private var dismiss
     @Environment(\.managedObjectContext) private var context
+    let todoItem: TodoItems!
     
     var body: some View {
         NavigationStack {
             Form {
-                TextField("Title", text: $text)
+                if let todoItem {
+                    TextField("Title", text: Binding(get: {
+                        todoItem.todo ?? ""
+                    }, set: { newValue in
+                        todoItem.todo = newValue
+                    }))
+                } else {
+                    TextField("Title", text: $text)
+                }
+                    
+                
                 
             }
-            .navigationTitle("Add Task")
+            .navigationTitle(todoItem == nil ? "Add Task" : "Edit Task")
             .navigationBarTitleDisplayMode(.inline)
             
             .toolbar {
@@ -32,12 +44,16 @@ struct AddTaskView: View {
                 
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
-                        save()
+                        if todoItem == nil {
+                            save()
+                        } else {
+                            update(todoItem)
+                        }
                         dismiss()
                     } label: {
                         Text("Done")
                     }
-                    .disabled(!isFormValid)
+                    .disabled(todoItem == nil ? !isFormValid : isFormValid)
                 }
             }
         }
@@ -56,11 +72,20 @@ struct AddTaskView: View {
        }
     }
     
+    private func update(_ todoItem: TodoItems) {
+        do {
+            try context.save()
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
+
+    
     var isFormValid: Bool {
         !text.isWhiteEmptySpace
     }
 }
 
-#Preview {
-    AddTaskView()
-}
+//#Preview {
+//    AddTaskView(todoItem: TodoItems?)
+//}

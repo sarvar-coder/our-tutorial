@@ -9,12 +9,9 @@ import Foundation
 
 struct TodoDummy: Codable {
     let todos: [Todo]
-    let total: Int
-    let skip: Int
-    let limit: Int
 }
 
-struct Todo: Codable {
+struct Todo: Codable, Identifiable {
     let id: Int
     let todo: String
     let completed: Bool

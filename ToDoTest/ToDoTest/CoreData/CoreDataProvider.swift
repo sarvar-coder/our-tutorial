@@ -7,16 +7,19 @@
 
 import Foundation
 import CoreData
+import SwiftUI
 
 class CoreDataProvider {
     
     static let shared = CoreDataProvider()
+    @FetchRequest(sortDescriptors: []) private var todoItems: FetchedResults<TodoItems>
     
     let persistentContainer: NSPersistentContainer
     
     var viewContext: NSManagedObjectContext {
         persistentContainer.viewContext
     }
+     
     
     static var preview: CoreDataProvider = {
         

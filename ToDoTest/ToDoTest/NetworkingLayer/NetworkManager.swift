@@ -6,11 +6,9 @@
 //
 
 import Foundation
-class NetworkManager: ObservableObject {
-   static let shared = NetworkManager()
-    @Published var todos = [Todo]()
+class NetworkManager  {
     
-   private func fetchTodo(_ handler: @escaping(Result<TodoDummy, Error>) -> Void) {
+    func fetchTodo(_ handler: @escaping(Result<TodoDummy, Error>) -> Void) {
         
         guard let url = URL(string: "https://dummyjson.com/todos") else { return }
         

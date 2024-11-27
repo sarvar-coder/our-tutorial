@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HeaderView: View {
     
-    @Binding var showAddTaskView: Bool
+    @Binding var sheetState: SheetState?
     @State private var todayDate = Date()
     
     var body: some View {
@@ -29,7 +29,7 @@ struct HeaderView: View {
             Spacer()
             
             Button {
-                showAddTaskView.toggle()
+                sheetState = .add
             } label: {
                 Image(systemName: "plus")
                 Text("New Task")
@@ -41,5 +41,5 @@ struct HeaderView: View {
 }
 
 #Preview {
-    HeaderView(showAddTaskView: .constant(false))
+    HeaderView(sheetState: .constant(.none))
 }

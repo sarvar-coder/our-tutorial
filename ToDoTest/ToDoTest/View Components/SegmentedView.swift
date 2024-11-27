@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SegmentedView: View {
     @Binding var selectedView: ShowState
-    
+    var count: Int
     var body: some View {
         
         VStack(alignment: .leading) {
@@ -22,7 +22,7 @@ struct SegmentedView: View {
                         .foregroundColor(selectedView == .all ? .blue : .secondary)
                         .bold()
                     
-                    BadgeView(count: 10, selectedView: selectedView == .all)
+                    BadgeView(count: count, selectedView: selectedView == .all)
                 }
                 .onTapGesture {
                     selectedView = .all
@@ -57,7 +57,7 @@ struct SegmentedView: View {
 }
 
 #Preview {
-    SegmentedView(selectedView: .constant(.all))
+    SegmentedView(selectedView: .constant(.all), count: 0)
 }
 
 struct ExDivider: View {

@@ -22,42 +22,39 @@ struct AspectVGrid<Item: Identifiable, ItemView: View>: View {
     var body: some View {
         
         GeometryReader { geometry in
-//            let gridItemSize = gridItemWidthThatFits(count: items.count,
-//                                                     size: geometry.size,
-//                                                     aspectRatio: aspectRatio)
-            LazyVGrid(columns: [GridItem(.adaptive(minimum: 70), spacing: 0)
+            LazyVGrid(columns: [GridItem(.adaptive(minimum: 80), spacing: 0)
                                ], spacing: 0) {
                 ForEach(items) { item in
                     content(item)
-                        .aspectRatio(2/3, contentMode: .fill) 
-                    
+                        .aspectRatio(2/3, contentMode: .fill)
                 }
             }
-            
         }
-        
     }
     
-    func gridItemWidthThatFits(
-        count: Int,
-        size: CGSize,
-        aspectRatio: CGFloat
-    ) -> CGFloat {
-        let columnCount = 1
-        
-        repeat {
-            let width = size.width / CGFloat(columnCount)
-            let height = width / aspectRatio
-            
-            let rowCount = Double(count / columnCount).rounded(.up)
-            
-            if rowCount * height < size.height {
-                return (size.width / CGFloat(columnCount)).rounded(.down)
-            }
-            
-        } while columnCount < count
-         
-        return min(size.width / CGFloat(count), size.height * aspectRatio).rounded(.down)
-    }
+//    func gridItemWidthThatFits(
+//        count: Int,
+//        size: CGSize,
+//        aspectRatio: CGFloat
+//    ) -> CGFloat {
+//        let columnCount = 1
+//        
+//        repeat {
+//            let width = size.width / CGFloat(columnCount)
+//            print(width)
+//            let height = width / aspectRatio
+//            
+//            let rowCount = Double(count / columnCount).rounded(.up)
+//            print(rowCount * height < size.height, "foo")
+//            if rowCount * height < size.height {
+//                return (size.width / CGFloat(columnCount)).rounded(.down)
+//            }
+//            
+//        } while columnCount > count
+//         
+//        let sth = max(size.width / CGFloat(count), size.height * aspectRatio).rounded(.down)
+//        print(sth, "Booo")
+//        return sth
+//    }
 }
 

@@ -7,36 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E40222F2CF2E83300E0C493 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E40222E2CF2E83300E0C493 /* CardView.swift */; };
-		5E4022312CF2F64F00E0C493 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4022302CF2F64F00E0C493 /* Shape.swift */; };
-		5E4022332CF2FD1000E0C493 /* Cardify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4022322CF2FD1000E0C493 /* Cardify.swift */; };
-		5E6458AB2CF895790023EC20 /* FlyingNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6458AA2CF895790023EC20 /* FlyingNumber.swift */; };
-		5E8804D92CE207BE006F22F2 /* StanfordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8804D82CE207BE006F22F2 /* StanfordApp.swift */; };
-		5E8804DB2CE207BE006F22F2 /* StanfordGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8804DA2CE207BE006F22F2 /* StanfordGameView.swift */; };
-		5E8804DD2CE207C2006F22F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E8804DC2CE207C2006F22F2 /* Assets.xcassets */; };
-		5E8804E02CE207C2006F22F2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E8804DF2CE207C2006F22F2 /* Preview Assets.xcassets */; };
-		5E9D0A952CE7676300A63540 /* StanfordGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9D0A942CE7676300A63540 /* StanfordGame.swift */; };
-		5E9D0A972CE7696300A63540 /* EmojiStanfordGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9D0A962CE7696300A63540 /* EmojiStanfordGame.swift */; };
-		5ED94C0E2CF0C14F0072FF24 /* AspectVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED94C0D2CF0C14F0072FF24 /* AspectVGrid.swift */; };
+		5E64590D2CFAE0BF0023EC20 /* SideBarSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E64590C2CFAE0BF0023EC20 /* SideBarSwiftUIApp.swift */; };
+		5E64590F2CFAE0BF0023EC20 /* MainTabbedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E64590E2CFAE0BF0023EC20 /* MainTabbedView.swift */; };
+		5E6459112CFAE0C10023EC20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E6459102CFAE0C10023EC20 /* Assets.xcassets */; };
+		5E6459142CFAE0C10023EC20 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E6459132CFAE0C10023EC20 /* Preview Assets.xcassets */; };
+		5E64591C2CFAE22B0023EC20 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E64591B2CFAE22B0023EC20 /* HomeView.swift */; };
+		5E64591E2CFAE24B0023EC20 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E64591D2CFAE24B0023EC20 /* ChatView.swift */; };
+		5E6459202CFAE25C0023EC20 /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E64591F2CFAE25C0023EC20 /* FavouriteView.swift */; };
+		5E6459222CFAE26D0023EC20 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6459212CFAE26D0023EC20 /* ProfileView.swift */; };
+		5E6459242CFAE3730023EC20 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6459232CFAE3730023EC20 /* SideMenu.swift */; };
+		5E6459262CFAE4140023EC20 /* SideMenurowType .swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6459252CFAE4140023EC20 /* SideMenurowType .swift */; };
+		5E6459282CFAE4820023EC20 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6459272CFAE4820023EC20 /* SideMenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5E40222E2CF2E83300E0C493 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		5E4022302CF2F64F00E0C493 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
-		5E4022322CF2FD1000E0C493 /* Cardify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cardify.swift; sourceTree = "<group>"; };
-		5E6458AA2CF895790023EC20 /* FlyingNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyingNumber.swift; sourceTree = "<group>"; };
-		5E8804D52CE207BE006F22F2 /* Stanford.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stanford.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E8804D82CE207BE006F22F2 /* StanfordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StanfordApp.swift; sourceTree = "<group>"; };
-		5E8804DA2CE207BE006F22F2 /* StanfordGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StanfordGameView.swift; sourceTree = "<group>"; };
-		5E8804DC2CE207C2006F22F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5E8804DF2CE207C2006F22F2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5E9D0A942CE7676300A63540 /* StanfordGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StanfordGame.swift; sourceTree = "<group>"; };
-		5E9D0A962CE7696300A63540 /* EmojiStanfordGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiStanfordGame.swift; sourceTree = "<group>"; };
-		5ED94C0D2CF0C14F0072FF24 /* AspectVGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectVGrid.swift; sourceTree = "<group>"; };
+		5E6459092CFAE0BF0023EC20 /* SideBarSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SideBarSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E64590C2CFAE0BF0023EC20 /* SideBarSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarSwiftUIApp.swift; sourceTree = "<group>"; };
+		5E64590E2CFAE0BF0023EC20 /* MainTabbedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbedView.swift; sourceTree = "<group>"; };
+		5E6459102CFAE0C10023EC20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E6459132CFAE0C10023EC20 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5E64591B2CFAE22B0023EC20 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5E64591D2CFAE24B0023EC20 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		5E64591F2CFAE25C0023EC20 /* FavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteView.swift; sourceTree = "<group>"; };
+		5E6459212CFAE26D0023EC20 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		5E6459232CFAE3730023EC20 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		5E6459252CFAE4140023EC20 /* SideMenurowType .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SideMenurowType .swift"; sourceTree = "<group>"; };
+		5E6459272CFAE4820023EC20 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5E8804D22CE207BE006F22F2 /* Frameworks */ = {
+		5E6459062CFAE0BF0023EC20 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,84 +46,92 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5E8804CC2CE207BE006F22F2 = {
+		5E6459002CFAE0BF0023EC20 = {
 			isa = PBXGroup;
 			children = (
-				5E8804D72CE207BE006F22F2 /* Stanford */,
-				5E8804D62CE207BE006F22F2 /* Products */,
+				5E64590B2CFAE0BF0023EC20 /* SideBarSwiftUI */,
+				5E64590A2CFAE0BF0023EC20 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		5E8804D62CE207BE006F22F2 /* Products */ = {
+		5E64590A2CFAE0BF0023EC20 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5E8804D52CE207BE006F22F2 /* Stanford.app */,
+				5E6459092CFAE0BF0023EC20 /* SideBarSwiftUI.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5E8804D72CE207BE006F22F2 /* Stanford */ = {
+		5E64590B2CFAE0BF0023EC20 /* SideBarSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				5E8804D82CE207BE006F22F2 /* StanfordApp.swift */,
-				5E8804DA2CE207BE006F22F2 /* StanfordGameView.swift */,
-				5E9D0A942CE7676300A63540 /* StanfordGame.swift */,
-				5E9D0A962CE7696300A63540 /* EmojiStanfordGame.swift */,
-				5E8804DC2CE207C2006F22F2 /* Assets.xcassets */,
-				5E8804DE2CE207C2006F22F2 /* Preview Content */,
-				5ED94C0D2CF0C14F0072FF24 /* AspectVGrid.swift */,
-				5E40222E2CF2E83300E0C493 /* CardView.swift */,
-				5E4022322CF2FD1000E0C493 /* Cardify.swift */,
-				5E4022302CF2F64F00E0C493 /* Shape.swift */,
-				5E6458AA2CF895790023EC20 /* FlyingNumber.swift */,
+				5E64591A2CFAE2180023EC20 /* SideMenuViews */,
+				5E64590C2CFAE0BF0023EC20 /* SideBarSwiftUIApp.swift */,
+				5E64590E2CFAE0BF0023EC20 /* MainTabbedView.swift */,
+				5E6459102CFAE0C10023EC20 /* Assets.xcassets */,
+				5E6459122CFAE0C10023EC20 /* Preview Content */,
+				5E6459232CFAE3730023EC20 /* SideMenu.swift */,
+				5E6459252CFAE4140023EC20 /* SideMenurowType .swift */,
+				5E6459272CFAE4820023EC20 /* SideMenuView.swift */,
 			);
-			path = Stanford;
+			path = SideBarSwiftUI;
 			sourceTree = "<group>";
 		};
-		5E8804DE2CE207C2006F22F2 /* Preview Content */ = {
+		5E6459122CFAE0C10023EC20 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				5E8804DF2CE207C2006F22F2 /* Preview Assets.xcassets */,
+				5E6459132CFAE0C10023EC20 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5E64591A2CFAE2180023EC20 /* SideMenuViews */ = {
+			isa = PBXGroup;
+			children = (
+				5E64591B2CFAE22B0023EC20 /* HomeView.swift */,
+				5E64591D2CFAE24B0023EC20 /* ChatView.swift */,
+				5E64591F2CFAE25C0023EC20 /* FavouriteView.swift */,
+				5E6459212CFAE26D0023EC20 /* ProfileView.swift */,
+			);
+			path = SideMenuViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5E8804D42CE207BE006F22F2 /* Stanford */ = {
+		5E6459082CFAE0BF0023EC20 /* SideBarSwiftUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5E8804E32CE207C2006F22F2 /* Build configuration list for PBXNativeTarget "Stanford" */;
+			buildConfigurationList = 5E6459172CFAE0C10023EC20 /* Build configuration list for PBXNativeTarget "SideBarSwiftUI" */;
 			buildPhases = (
-				5E8804D12CE207BE006F22F2 /* Sources */,
-				5E8804D22CE207BE006F22F2 /* Frameworks */,
-				5E8804D32CE207BE006F22F2 /* Resources */,
+				5E6459052CFAE0BF0023EC20 /* Sources */,
+				5E6459062CFAE0BF0023EC20 /* Frameworks */,
+				5E6459072CFAE0BF0023EC20 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Stanford;
-			productName = Stanford;
-			productReference = 5E8804D52CE207BE006F22F2 /* Stanford.app */;
+			name = SideBarSwiftUI;
+			productName = SideBarSwiftUI;
+			productReference = 5E6459092CFAE0BF0023EC20 /* SideBarSwiftUI.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5E8804CD2CE207BE006F22F2 /* Project object */ = {
+		5E6459012CFAE0BF0023EC20 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					5E8804D42CE207BE006F22F2 = {
+					5E6459082CFAE0BF0023EC20 = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
 				};
 			};
-			buildConfigurationList = 5E8804D02CE207BE006F22F2 /* Build configuration list for PBXProject "Stanford" */;
+			buildConfigurationList = 5E6459042CFAE0BF0023EC20 /* Build configuration list for PBXProject "SideBarSwiftUI" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -131,49 +139,49 @@
 				en,
 				Base,
 			);
-			mainGroup = 5E8804CC2CE207BE006F22F2;
-			productRefGroup = 5E8804D62CE207BE006F22F2 /* Products */;
+			mainGroup = 5E6459002CFAE0BF0023EC20;
+			productRefGroup = 5E64590A2CFAE0BF0023EC20 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5E8804D42CE207BE006F22F2 /* Stanford */,
+				5E6459082CFAE0BF0023EC20 /* SideBarSwiftUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5E8804D32CE207BE006F22F2 /* Resources */ = {
+		5E6459072CFAE0BF0023EC20 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E8804E02CE207C2006F22F2 /* Preview Assets.xcassets in Resources */,
-				5E8804DD2CE207C2006F22F2 /* Assets.xcassets in Resources */,
+				5E6459142CFAE0C10023EC20 /* Preview Assets.xcassets in Resources */,
+				5E6459112CFAE0C10023EC20 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5E8804D12CE207BE006F22F2 /* Sources */ = {
+		5E6459052CFAE0BF0023EC20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E8804DB2CE207BE006F22F2 /* StanfordGameView.swift in Sources */,
-				5E6458AB2CF895790023EC20 /* FlyingNumber.swift in Sources */,
-				5E9D0A972CE7696300A63540 /* EmojiStanfordGame.swift in Sources */,
-				5E4022332CF2FD1000E0C493 /* Cardify.swift in Sources */,
-				5E9D0A952CE7676300A63540 /* StanfordGame.swift in Sources */,
-				5E4022312CF2F64F00E0C493 /* Shape.swift in Sources */,
-				5ED94C0E2CF0C14F0072FF24 /* AspectVGrid.swift in Sources */,
-				5E40222F2CF2E83300E0C493 /* CardView.swift in Sources */,
-				5E8804D92CE207BE006F22F2 /* StanfordApp.swift in Sources */,
+				5E64591E2CFAE24B0023EC20 /* ChatView.swift in Sources */,
+				5E6459242CFAE3730023EC20 /* SideMenu.swift in Sources */,
+				5E64591C2CFAE22B0023EC20 /* HomeView.swift in Sources */,
+				5E6459202CFAE25C0023EC20 /* FavouriteView.swift in Sources */,
+				5E64590F2CFAE0BF0023EC20 /* MainTabbedView.swift in Sources */,
+				5E6459262CFAE4140023EC20 /* SideMenurowType .swift in Sources */,
+				5E6459282CFAE4820023EC20 /* SideMenuView.swift in Sources */,
+				5E6459222CFAE26D0023EC20 /* ProfileView.swift in Sources */,
+				5E64590D2CFAE0BF0023EC20 /* SideBarSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		5E8804E12CE207C2006F22F2 /* Debug */ = {
+		5E6459152CFAE0C10023EC20 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -236,7 +244,7 @@
 			};
 			name = Debug;
 		};
-		5E8804E22CE207C2006F22F2 /* Release */ = {
+		5E6459162CFAE0C10023EC20 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -292,14 +300,14 @@
 			};
 			name = Release;
 		};
-		5E8804E42CE207C2006F22F2 /* Debug */ = {
+		5E6459182CFAE0C10023EC20 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Stanford/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SideBarSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 386NUBNWC7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -313,7 +321,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = bss.dev.Stanford;
+				PRODUCT_BUNDLE_IDENTIFIER = bss.dev.SideBarSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -321,14 +329,14 @@
 			};
 			name = Debug;
 		};
-		5E8804E52CE207C2006F22F2 /* Release */ = {
+		5E6459192CFAE0C10023EC20 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Stanford/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SideBarSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 386NUBNWC7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -342,7 +350,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = bss.dev.Stanford;
+				PRODUCT_BUNDLE_IDENTIFIER = bss.dev.SideBarSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -353,25 +361,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5E8804D02CE207BE006F22F2 /* Build configuration list for PBXProject "Stanford" */ = {
+		5E6459042CFAE0BF0023EC20 /* Build configuration list for PBXProject "SideBarSwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5E8804E12CE207C2006F22F2 /* Debug */,
-				5E8804E22CE207C2006F22F2 /* Release */,
+				5E6459152CFAE0C10023EC20 /* Debug */,
+				5E6459162CFAE0C10023EC20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5E8804E32CE207C2006F22F2 /* Build configuration list for PBXNativeTarget "Stanford" */ = {
+		5E6459172CFAE0C10023EC20 /* Build configuration list for PBXNativeTarget "SideBarSwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5E8804E42CE207C2006F22F2 /* Debug */,
-				5E8804E52CE207C2006F22F2 /* Release */,
+				5E6459182CFAE0C10023EC20 /* Debug */,
+				5E6459192CFAE0C10023EC20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 5E8804CD2CE207BE006F22F2 /* Project object */;
+	rootObject = 5E6459012CFAE0BF0023EC20 /* Project object */;
 }

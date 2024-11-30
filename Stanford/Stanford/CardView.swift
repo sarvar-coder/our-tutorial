@@ -16,35 +16,32 @@ struct CardView: View {
     }
        
     var body: some View {
-        ZStack {
-            let base = RoundedRectangle(cornerRadius: 12.0)
-            Group {
-                base.fill(.white)
-                base.stroke(lineWidth: 2)
-                Pie(endAngle: .degrees(240))
-                    .opacity(0.8)
-                    
-                    
-                   
-                
+        Pie(endAngle: .degrees(240))
+            .opacity(0.8)
+            .overlay {
                 Text(card.content)
                     .font(.system(size: 60))
                     .minimumScaleFactor(0.01)
                     .aspectRatio(1, contentMode: .fit)
-                    .padding(5)
+                    .rotationEffect(.degrees(card.isMatched ? 360 : 0))
+                    .animation(.spin(duration: 1), value: card.isMatched)
             }
-            .opacity(card.isFaceUp ? 1 : 0)
+            .padding(5)
+            .cardify(isFaceUp: card.isFaceUp)
+            .opacity(card.isFaceUp || !card.isMatched ? 1 : 0)
+    }
+}
 
-            base.fill().opacity(card.isFaceUp ? 0 : 1)
-        }
-        .opacity(card.isFaceUp || !card.isMatched ? 1 : 0)
+extension Animation {
+    static func spin(duration: TimeInterval) -> Animation {
+.linear(duration: 1).repeatForever(autoreverses: false)
     }
 }
 
 
 #Preview {
     typealias Card = StanfordGame<String>.Card
-   return CardView(Card(content: "S"))
+    return CardView(Card(content: "S"))
         .padding()
         .foregroundColor(.green)
 }

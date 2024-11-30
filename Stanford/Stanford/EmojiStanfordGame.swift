@@ -29,6 +29,10 @@ class EmojiStanfordGame: ObservableObject {
         get { model.cards }
     }
     
+    var score: Int {
+        model.score
+    }
+    
     // MARK: - INTENTS
     
     func shuffle() {

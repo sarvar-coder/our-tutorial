@@ -10,11 +10,12 @@ import Foundation
 struct StanfordGame<CardContent> where CardContent: Equatable {
     
     private(set) var cards: Array<Card>
+    private(set) var score = 0
     
     init(numberOfPaiarsOfCards: Int, cardContentFactory: (Int) -> CardContent) {
         cards = []
         
-        for pairIndex in 0..<max(2, numberOfPaiarsOfCards) {
+        for pairIndex in 0..<max(10, numberOfPaiarsOfCards) {
             let content = cardContentFactory(pairIndex)
             cards.append(Card(content: content))
             cards.append(Card(content: content))
@@ -36,14 +37,21 @@ struct StanfordGame<CardContent> where CardContent: Equatable {
                 if cards[chosenIndex].content == cards[potentialMatchIndex].content {
                     cards[chosenIndex].isMatched = true
                     cards[potentialMatchIndex].isMatched = true
-                    
-                }
-                indexOfTheOneAndOnlyFaceUpCard = nil
+                    score += 2
+                } 
+//                else {
+//                    if cards[chosenIndex].hasBeenSeen {
+//                       score -= 1
+//                    }
+//                    if cards[chosenIndex].hasBeenSeen {
+//                      score -= 1
+//                    }
+//                }
+//                indexOfTheOneAndOnlyFaceUpCard = nil  // wrong implemataton
                 
             } else {
                 indexOfTheOneAndOnlyFaceUpCard = chosenIndex
             }
-            
             cards[chosenIndex].isFaceUp = true
         }
     }
@@ -54,7 +62,14 @@ struct StanfordGame<CardContent> where CardContent: Equatable {
     
     struct Card: Identifiable, Equatable, CustomDebugStringConvertible {
         let id = UUID()
-        var isFaceUp = true
+        var isFaceUp = false {
+            didSet {
+                if oldValue && !isFaceUp {
+                    hasBeenSeen = true
+                }
+            }
+        }
+        var hasBeenSeen = false
         var isMatched = false
         let content: CardContent
         

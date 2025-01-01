@@ -26,7 +26,7 @@ struct CardsListView: View {
                     CardThumbnail()
                         .onTapGesture {
                           isPresented = true
-                        }
+                        }                        
                 }
             }
         }

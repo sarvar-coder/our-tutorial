@@ -9,11 +9,18 @@ import SwiftUI
 
 struct CardDetailView: View {
 
+    @EnvironmentObject var store: CardStore
+    @Binding var card: Card
+    
     var body: some View {
-        Text("Hello, World!")
+        ZStack {
+            card.backgroundColor
+            
+        }
     }
 }
 
 #Preview {
-    CardDetailView()
+    CardDetailView(card: .constant(initialCards[0]))
+        .environmentObject(CardStore(defaultData: true))
 }

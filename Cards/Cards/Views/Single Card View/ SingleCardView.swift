@@ -21,7 +21,7 @@ struct SingleCardView: View {
     }
 
     var content: some View {
-        card.backgroundColor
+        CardDetailView(card: $card)
     }
 }
 

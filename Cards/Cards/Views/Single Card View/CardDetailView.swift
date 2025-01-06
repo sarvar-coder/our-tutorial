@@ -15,7 +15,13 @@ struct CardDetailView: View {
     var body: some View {
         ZStack {
             card.backgroundColor
-            
+            ForEach($card.elements, id: \.id) { $element in
+              CardElementView(element: element)
+                .resizableView()
+                .frame(
+                  width: element.transform.size.width,
+                  height: element.transform.size.height)
+            }
         }
     }
 }

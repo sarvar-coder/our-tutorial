@@ -19,6 +19,7 @@
 		5E7DFB522D2BAAA600984AFC /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7DFB512D2BAAA600984AFC /* Card.swift */; };
 		5E7DFB542D2BAB7D00984AFC /* CardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7DFB532D2BAB7D00984AFC /* CardStore.swift */; };
 		5E7DFB562D2C623200984AFC /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7DFB552D2C623200984AFC /* CardDetailView.swift */; };
+		5E7DFB582D2C688100984AFC /* CardElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7DFB572D2C688100984AFC /* CardElementView.swift */; };
 		5EE3F8D32D22EF600047FA53 /* CardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE3F8D22D22EF600047FA53 /* CardsApp.swift */; };
 		5EE3F8D52D22EF600047FA53 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE3F8D42D22EF600047FA53 /* ContentView.swift */; };
 		5EE3F8D72D22EF620047FA53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EE3F8D62D22EF620047FA53 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		5E7DFB512D2BAAA600984AFC /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		5E7DFB532D2BAB7D00984AFC /* CardStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStore.swift; sourceTree = "<group>"; };
 		5E7DFB552D2C623200984AFC /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
+		5E7DFB572D2C688100984AFC /* CardElementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardElementView.swift; sourceTree = "<group>"; };
 		5EE3F8CF2D22EF600047FA53 /* Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EE3F8D22D22EF600047FA53 /* CardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsApp.swift; sourceTree = "<group>"; };
 		5EE3F8D42D22EF600047FA53 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				5EE3F8E62D22F36D0047FA53 /* ToolbarSelection.swift */,
 				5EE3F8E82D22F38A0047FA53 /* BottomToolbar.swift */,
 				5E7DFB552D2C623200984AFC /* CardDetailView.swift */,
+				5E7DFB572D2C688100984AFC /* CardElementView.swift */,
 			);
 			path = "Single Card View";
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				5EE3F8E12D22EF890047FA53 /* CardsListView.swift in Sources */,
 				5EE3F8E72D22F36D0047FA53 /* ToolbarSelection.swift in Sources */,
 				5EE3F8E92D22F38A0047FA53 /* BottomToolbar.swift in Sources */,
+				5E7DFB582D2C688100984AFC /* CardElementView.swift in Sources */,
 				5E578AC02D250B14004084F3 /* Transform.swift in Sources */,
 				5E7DFB542D2BAB7D00984AFC /* CardStore.swift in Sources */,
 				5E578AC52D251D09004084F3 /* Settings.swift in Sources */,
